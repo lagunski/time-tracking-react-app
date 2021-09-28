@@ -15,8 +15,7 @@ export const Timer: FC = () => {
   });
 
   useEffect(() => {
-    // TODO remove any type
-    let interval: any = null;
+    let interval: NodeJS.Timeout | null = null;
 
     if (timerOn) {
       interval = setInterval(() => {
@@ -29,10 +28,11 @@ export const Timer: FC = () => {
         });
       }, 1000);
     } else if (!timerOn) {
+      // @ts-ignore
       clearInterval(interval);
     }
 
-    return () => clearInterval(interval);
+    return () => clearInterval(interval as NodeJS.Timeout);
   }, [timerOn, task.description, task.dateStart]);
 
   const onChangeHandler = (e: React.ChangeEvent<HTMLInputElement>): void => {
