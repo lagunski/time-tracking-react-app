@@ -87,13 +87,6 @@ export const tasksMock = [
   },
   {
     id: v1(),
-    text: 'Creating utils',
-    time: 1500000,
-    dateStart: 1642499940000,
-    dateFinish: 1642499940000 + 1500000,
-  },
-  {
-    id: v1(),
     text: 'Adding tasks pagination',
     time: 3050000,
     dateStart: 1627813980000,
@@ -105,12 +98,5 @@ export const tasksMock = [
     time: 3300000,
     dateStart: 1623503700000,
     dateFinish: 1623503700000 + 3300000,
-  },
-  {
-    id: v1(),
-    text: 'Creating time tracker app',
-    time: 2000000,
-    dateStart: 1623503700000,
-    dateFinish: 1623503700000 + 2000000,
   },
 ];
