@@ -27,7 +27,6 @@ const TasksWrapper: FC = () => {
         dateFinish={task.dateFinish}
       />
     ));
-
   return (
     <div>
       <div className="row mb-3">
@@ -48,7 +47,6 @@ const TasksWrapper: FC = () => {
           ? tasksRender.slice((currentPage - 1) * pageSize, currentPage * pageSize)
           : 'not found'}
       </div>
-
       <div className="row">
         <div className="col-12 px-sm-0 mt-2">
           <TasksPagination tasksCount={tasksRender.length} />

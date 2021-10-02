@@ -7,7 +7,7 @@ import {
   SET_CURRENT_PAGE,
   SORT_TASKS_ASC,
   SORT_TASKS_DESC,
-} from './videosActions';
+} from './tasksActions';
 import { v1 } from 'uuid';
 import { TaskType } from '../../types/TaskType';
 import { tasksMock } from '../../mock/tasksMock';
