@@ -5,7 +5,7 @@ import {
   SET_CURRENT_PAGE,
   SORT_TASKS_ASC,
   SORT_TASKS_DESC,
-} from './videosActions';
+} from './tasksActions';
 
 export const addNewTaskAC = (text: string, time: number, dateStart: number) =>
   ({ type: ADD_NEW_TASK, text, time, dateStart } as const);
